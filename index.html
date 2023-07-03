@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iron Man Wiki - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="html2.html">History</a>
+        <a href="html3.html">Gadgets</a>
+    </nav>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+   
+        </div>
+
+        <div class="main-container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+    </div>
+    <main>
+        <h1>Welcome to the Iron Man Wiki!</h1>
+        <p>This is a website dedicated to the history and lore of Iron Man.</p>
+
+        <section>
+            <h2>Who is Iron Man?</h2>
+            <p>Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby.</p>
+            
+
+
+            <img id="myImg" src="img/OIP.jpg" alt="Iron Man" style="width:100%;max-width:300px">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal1">
+
+                <!-- The Close Button -->
+                <span class="close1">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content1" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+
+            
+            <h2>Why is Iron Man important?</h2>
+            <p>Iron Man has been a significant part of the Marvel universe since his first appearance in Tales of Suspense #39 back in 1963. His character has evolved significantly over time, from a weapons manufacturer to a hero who dedicates his life to protecting the world.</p>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+
+    <div class="button" onclick="changeBgColor('#FBD5D0')">Change Background Color</div>
+
+   
+</body>
+</html>
